@@ -30,7 +30,7 @@ spec:
         - name: SPRING_PROFILES_ACTIVE
           value: production
         - name: SPRING_DATASOURCE_URL
-          value: jdbc:postgresql://wmp-dev.cite0aq48bao.us-east-1.rds.amazonaws.com:5432/wmp?currentSchema=portfolio_schema
+          value: "jdbc:postgresql://wmp-dev.cite0aq48bao.us-east-1.rds.amazonaws.com:5432/wmp?currentSchema=portfolio_schema"
         - name: SPRING_DATASOURCE_USERNAME
           value: portfolio_svc_user
         - name: SPRING_DATASOURCE_PASSWORD
