@@ -16,6 +16,25 @@ spec:
   containers:
     - name: auth-service
       image: 471451201019.dkr.ecr.us-east-1.amazonaws.com/auth-service
+      env:
+        - name: DB_HOST
+          value: "wmp-dev.cite0aq48bao.us-east-1.rds.amazonaws.com"
+        - name: DB_PORT
+          value: "5432"
+        - name: DB_USER
+          value: "auth_svc_user"
+        - name: DB_PASSWORD
+          value: "localdev123"
+        - name: DB_NAME
+          value: "wmp"
+        - name: DB_SCHEMA
+          value: "auth_schema"
+        - name: SERVER_PORT
+          value: "8081"
+        - name: JWT_SECRET
+          value: "myDefaultSuperSecretKeyThatIsAtLeast256BitsLongForHS256Algorithm"
+        - name: PORTFOLIO_SERVICE_URL
+          value: "http://localhost:8080"
 ---
 
 apiVersion: v1
