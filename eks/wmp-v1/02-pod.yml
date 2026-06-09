@@ -69,5 +69,13 @@ spec:
   containers:
     - name: analytics-service
       image: 471451201019.dkr.ecr.us-east-1.amazonaws.com/analytics-service
----
+      env:
+        - name: DATABASE_URL
+          value: "postgresql+asyncpg://analytics_svc_user:localdev123@wmp-dev.cite0aq48bao.us-east-1.rds.amazonaws.com:5432/wmp"
+        - name: DB_SCHEMA
+          value: "analytics_schema"
+        - name: LOG_LEVEL
+          value: "INFO"
+        - name: ENVIRONMENT
+          value: "production"
 
