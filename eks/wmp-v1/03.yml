@@ -32,7 +32,7 @@ spec:
       image: 471451201019.dkr.ecr.us-east-1.amazonaws.com/auth-service
       envFrom:
         - configMapRef:
-            name: auth-service
+            name: auth-service-config
 ---
 apiVersion: v1
 kind: ConfigMap
