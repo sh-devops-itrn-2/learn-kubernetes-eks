@@ -57,7 +57,7 @@ spec:
       image: 471451201019.dkr.ecr.us-east-1.amazonaws.com/portfolio-service
       envFrom:
         - configMapRef:
-            name: portfolio-service
+            name: portfolio-service-config
 ---
 
 apiVersion: v1
@@ -80,4 +80,4 @@ spec:
       image: 471451201019.dkr.ecr.us-east-1.amazonaws.com/analytics-service
       envFrom:
         - configMapRef:
-            name: analytics-service
+            name: analytics-service-config
