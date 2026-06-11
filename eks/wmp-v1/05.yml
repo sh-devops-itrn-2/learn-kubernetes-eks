@@ -128,7 +128,7 @@ spec:
           image: 471451201019.dkr.ecr.us-east-1.amazonaws.com/analytics-service
           envFrom:
             - configMapRef:
-                name: amalytics-service-config
+                name: analytics-service-config
 ---
 
 
