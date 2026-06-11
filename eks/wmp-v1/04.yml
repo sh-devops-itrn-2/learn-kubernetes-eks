@@ -22,7 +22,7 @@ data:
   DB_SCHEMA: "auth_schema"
   SERVER_PORT: "8081"
   JWT_SECRET: "myDefaultSuperSecretKeyThatIsAtLeast256BitsLongForHS256Algorithm"
-  PORTFOLIO_SERVICE_URL: "http://localhost:8080"
+  PORTFOLIO_SERVICE_URL: "http://portfolio-service:8080"
 ---
 apiVersion: v1
 kind: Pod
